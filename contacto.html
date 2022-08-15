@@ -23,12 +23,39 @@
         <main>
             <form action="">
                 <label for="nombreyapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreyapellido">
+                <input type="text" id="nombreyapellido" class="input-padron" required>
                 <label for="email">Correo Electronico</label>
-                <input type="text" id="email">
+                <input type="email" id="email" class="input-padron" required
+                    placeholder="email@dominio.com">
                 <label for="telefono">Teléfono</label>
-                <input type="text" id="telefono">
-                <input type="submit" value="Enviar formulario">
+                <input type="tel" id="telefono" class="input-padron" required
+                    placeholder="(XX) XXX XXX XXXX">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="67" rows="10"></textarea class="input-padron">
+                <!-- Agrupa items que pertenecen a la misma cosa o grupo -->
+                <fieldset>
+                    <legend>Metodo de contacto</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">
+                    Email</label>
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">
+                    Email</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"
+                        id="radio-whatsapp" checked>Email</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>En que horario prefiere ser atendido</legend>
+                    <select name="" id="">
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>
+                </fieldset>
+                <label class="checkbox"><input type="checkbox" checked>¿Decea recibir notificaciones?</label>
+                <input type="submit" value="Enviar formulario" class="enviar">
             </form>
         </main>
         <footer>

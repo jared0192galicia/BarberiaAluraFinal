@@ -97,14 +97,31 @@ main {
 form {
     margin: 40px 0;
 }
-form label{
+form label, form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
-form input {
+.input-padron {
     display: block;
     margin: 0 0 20px;
     padding: 10px 30px;
     width: 50%;
+}
+.checkbox{
+    margin: 24px 0;
+}
+.enviar {
+    color: white;
+    width: 40%;
+    border: none;
+    padding: 12px 0;
+    font-size: 18px;
+    background: orange;
+    transition: 1s all;
+}
+.enviar:hover {
+    background: darkorange;
+    font-size: 20px;
+    transform: scale(1.2);
 }
